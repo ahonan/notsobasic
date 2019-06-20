@@ -73,231 +73,78 @@ a.homehead {
     transition: .4s;
 }
 
-.main{
-  padding-left: 30px;
-  padding-right: 30px;
-}
+/*.main {
+  margin-left:30px;
+  margin-right:30px;
+}*/
 
 #banner {
+  display:inline-block;
   background-color: #fff;
-  background-image: url("pics/bookshelf.jpg");
+  margin-bottom: 30px;
+  height:200px;
+  width:100%;
+  text-align:center;
+  background-image: url("pics/decision_side.jpg");
   background-position: center center;
   background-repeat: no-repeat;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin-left: -30px;
-  margin-right: -30px;
   background-size: cover;
+}
+
+#banner2 {
+  display:inline-block;
+  background-color: #fff;
   margin-bottom: 30px;
-  /* Other banner design
-  margin-left: 0px;
-  margin-right: 0px;
-  border-radius: 15px;
-  */
+  height:200px;
+  width:100%;
+  text-align:left;
+  background-image: url("pics/decision_side2.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-#banner_label {
-  font-size: 60px;
-  line-height: 1.3;
-  font-weight: 500;
-  letter-spacing: .025em;
+#banner_mid {
+  height:100%;
 }
 
-.full_line {
-  margin-left: -30px;
-  margin-right: -30px;
-}
-
-#top_picks_head {
-  margin-top: 0px;
-  margin-bottom: -5px;
-  font-size: 45px;
-  line-height: 1.3;
-  font-weight: 500;
-  letter-spacing: .025em;
-  font-family: "PT Sans";
-  text-align: left;
-}
-
-#fun_mode {
+#banner2_title {
+  display:inline-block;
   float:right;
-  font-family: "PT Sans";
+  line-height:150px;
+  margin-right:50px;
+  font-family:"PT Sans";
+  color:#fff;
+}
+
+#joshua {
+  width:100%;
+  padding:0px 30px 30px 30px;
+}
+
+
+
+
+
+
+#footer {
+  width:100%;
+  text-align:center;
+}
+
+#basic {
+  font-family:"PT Sans";
   font-size:16px;
-  position: relative;
-  top:9px;
-  border: none;
-  padding:10px;
-  border-radius:10px;
+  border-radius:5px;
   transition:.4s;
 }
 
-#fun_mode:hover {
-  opacity: .7;
+#basic a {
+  text-decoration:none;
+  color:black;
+}
+
+#basic:hover {
+  background-color:rgb(200,200,200);
   transition:.4s;
-  cursor:pointer;
 }
-
-#top_picks_list {
-  padding-left: 0;
-  list-style: none;
-  margin-bottom: 20px;
-}
-
-#top_picks_list li {
-  margin-top: 20px;
-  height: 100px;
-}
-
-.gap, .book_img_container, .book_title_container, .stars_container, .review_container, .book_title, .stars, .review, .centerer {
-  vertical-align: middle;
-  display: inline-block;
-}
-
-.gap {
-  height: 100%;
-  width: 4%;
-}
-
-.book_img_container {
-  width: 11%;
-  height: 100%;
-}
-
-.book_title_container {
-  width: 24%;
-  height: 100%;
-  text-align: center;
-  font-family: "PT Sans";
-  font-size: 16px;
-}
-
-.stars_container {
-  width: 15%;
-  height: 100%;
-  text-align: center;
-  line-height: 100px;
-}
-
-.review_container {
-  width: 39%;
-  height: 100%;
-  text-align: center;
-  font-family: "PT Sans";
-  font-size: 14px;
-  float: right;
-}
-
-.book_img {
-  height: 100%;
-}
-
-.centerer {
-  height: 100%;
-}
-
-.book_title {
-  line-height: 1.3;
-}
-
-.book_title br {
-  line-height: 2;
-}
-
- .stars {
-   height: 20%;
- }
-
- .review {
-   width: 98%;
-   line-height: 1.5;
- }
- 
- .genre_container {
-   height: 150px;
-   width: 100%;
-   margin-bottom:30px;
-   margin-top:25px;
- }
- 
- .genre {
-   width:46%;
-   height:100%;
-   display:inline-block;
-   text-align:center;
- }
- 
- .genre_title {
-   width:100%;
-   position:relative;
-   text-align:center;
-   line-height:150px;
-   z-index:0;
- }
- 
- .genre_title h1 {
-   margin: auto;
- }
- 
- .genre_span {
-   background-color: white;
-   border-radius: 5px;
-   padding:0px 5px 0px 5px;
- }
- 
- .genre_back {
-   width: 100%;
-   display: inline-block;
-   height: 100%;
-   background-position: center center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   border: 1px solid black;
-   border-radius: 10px;
-   z-index:-1;
-   position:relative;
-   top:-150px;
- }
- 
- .overlay {
-   width: 100%;
-   height: 100%;
-   border-radius:10px;
-   background-color:black;
-   opacity: 0;
-   transition: .4s;
- }
- 
- .overlay:hover {
-   opacity:.3;
-   transition:.4s;
- }
- 
- #financial {
-   background-image: url("pics/financial.jpg");
- }
- 
- #academic {
-   background-image: url("pics/academic.jpg");
- }
- 
- #self_improvement {
-   background-image: url("pics/self_improvement.jpg");
- }
- 
- #fiction {
-   background-image: url("pics/fiction.jpg");
- }
- 
- #top_picks_bg {
-   background-image: url("pics/bookshelf.jpg");
- }
- 
- #academic_genre, #fiction_genre {
-   float:right;
- }
- 
- #top_picks_container {
-   text-align:center;
- }
