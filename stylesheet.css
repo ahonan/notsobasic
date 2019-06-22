@@ -1,5 +1,5 @@
 :root {
-  --text_input_border:#a2c523
+  --text_input_border:#FFAF59;
   /*aebd38 a2c523 6fb98f 5bc8ac*/
 }
 
@@ -112,7 +112,9 @@ a.homehead {
   width:75%;
   background-color:white;
   display:inline-block;
-  padding:15px 30px;
+  margin-top:15px;
+  margin-bottom:15px;
+  padding:0 30px;
   text-align:center;
 }
 
@@ -123,12 +125,17 @@ a.homehead {
   font-weight:300;
   font-size:36px;
   margin:0;
-  margin-bottom:15px;
-  border-bottom:5px solid #FF906B;
+  /*border-bottom:5px solid #FF906B;
   border-top:5px solid #FF906B;
   border-radius:20px;
-  height:80px;
-  vertical-align:top;
+  height:80px;*/
+}
+
+.column_break {
+  height:0;
+  padding:5px 0px;
+  margin:0 -30px;
+  background-color:#ece9e8;
 }
 
 #joshua {
@@ -137,8 +144,7 @@ a.homehead {
   display:inline-block;
   text-align:center;
   padding:0;
-  margin:0;
-  margin-bottom:10px;
+  margin:5px 0;
 }
 
 .option {
@@ -179,7 +185,9 @@ a.homehead {
 
 .underliner::before {
   bottom:0;
-  left:-4px;
+  left:-2px;
+  opacity:1;
+  z-index:1000000;
 }
 
 .underliner::after {
@@ -194,19 +202,19 @@ a.homehead {
 
 .text_box:focus ~ .underliner::before {
   border-bottom-color:var(--text_input_border);
-  border-right-color:var(--text_input_border);
+  /*border-right-color:var(--text_input_border);*/
   transition:
-    width .5s ease-out,
+    width 1s ease-out,
     height .25s ease-out .5s;
 }
-
+/*
 .text_box:focus ~ .underliner::after {
   border-top-color:var(--text_input_border);
   border-left-color:var(--text_input_border);
   transition:
     width .5s ease-out,
     height .25s ease-out .5s;
-}
+}*/
 
 /*.underliner {
   content:'';
@@ -227,12 +235,14 @@ a.homehead {
 .text_box:focus {
   outline:none;
   box-shadow:none;
+  transition:1s;
 }
 
 #plus_minus_container {
   width:100%;
   height:75px;
   margin-bottom:10px;
+  margin-top:10px;
 }
 
 #plus, #minus {
@@ -248,7 +258,6 @@ a.homehead {
 
 #plus:hover, #minus:hover {
   cursor:pointer;
-  opacity:.7;
   transform:scale3D(1.01,1.03,1);
   transform-origin:center center;
 }
@@ -257,12 +266,14 @@ a.homehead {
   float:left;
   background-image: url("pics/minus.png");
   border:2px solid #ff6b90;
+  /*#FFAF59*/
 }
 
 #plus {
   float:right;
   background-image: url("pics/plus.png");
   border:2px solid #6bdaff;
+  /*#FFAF59*/
 }
 
 #decide {
@@ -275,11 +286,11 @@ a.homehead {
   font-size:44px;
   color:black;
   transition:.4s;
+  margin-bottom:10px;
 }
 
 #decide:hover {
   cursor:pointer;
-  opacity:.7;
   transform:scale3D(1.01,1.03,1);
   transform-origin: center center;
 }
