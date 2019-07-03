@@ -26,9 +26,9 @@ var main=function(){
         $('#hidden_break').css('display','block');
         $('#decision_container').css({height:"60px",transition:"height .5s cubic-bezier(.17,.89,.61,1.3)"});
       } else {
-        $('#decision_container').css({height:"0px"});
+        $('#decision_container').css({height:"0px",transition:"height .25s ease-in"});
         setTimeout(function(){
-          $('#decision_container').css({height:"60px"});
+          $('#decision_container').css({height:"60px",transition:"height .5s cubic-bezier(.17,.89,.61,1.3)"});
         }, 500);
       }
 
