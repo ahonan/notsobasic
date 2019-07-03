@@ -15,6 +15,16 @@ var main=function(){
   });
 
   $('#decide').click(function() {
+    decide();
+  });
+
+  $('.text_box').on('keypress', function(e) {
+    if(e.which == 13) {
+      decide();
+    }
+  });
+
+  function decide() {
     var opts = [];
     $('#joshua .text_box').each(function(i,obj) {
       var txt = $(this).val();
@@ -34,10 +44,10 @@ var main=function(){
 
       decision_open = true;
     }else {
-      $('#decision_container').css({height:0,transition:"height .5s cubic-bezier(.17,.89,.61,1.3)"});
+      $('#decision_container').css({height:0,transition:"height .5s ease-in"});
       $('#hidden_break').css({display:"none",transition:".5s"});
       decision_open = false;
     }
-  });
+  }
 };
 $(document).ready(main);
